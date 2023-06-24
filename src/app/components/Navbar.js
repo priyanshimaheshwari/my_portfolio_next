@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation'
 import React from 'react'
 import  { TwitterIcon, GithubIcon, LinkedInIcon, PinterestIcon } from './Icons'
 import Logo from './Logo'
+import {motion} from "framer-motion"
 
 const CustomLink=({href,title,className=""})=>{
   const router=useRouter();
@@ -29,18 +30,19 @@ const Navbar = () => {
         </nav>
         
         <nav className='flex items-center justify-center flex-wrap'>
-            <a href='/' target={"_blank"}>
+            <motion.a href='https://twitter.com/maheshwari76819?t=s96WkVLli9n2vKO25QB41Q&s=08' target={"_blank"} whileHover={{y:-4}}
+            whileTap={{scale:0.9}} className="w-6 mr-3">
               <TwitterIcon />
-            </a>
-            <a href='/' target={"_blank"}>
+            </motion.a>
+            <motion.a href='https://github.com/priyanshimaheshwari' target={"_blank"} whileHover={{y:-4}}  whileTap={{scale:0.9}} className="w-6 mx-3" >
               <GithubIcon />
-            </a>
-            <a href='/' target={"_blank"}>
+            </motion.a>
+            <motion.a href='https://www.linkedin.com/in/priyanshi-maheshwari-438bab225' target={"_blank"} whileHover={{y:-4}}  whileTap={{scale:0.9}}  className="w-6 mx-3" >
               <LinkedInIcon />
-            </a>
-            <a href='/' target={"_blank"}>
+            </motion.a>
+            <motion.a href='/' target={"_blank"} whileHover={{y:-4}}  whileTap={{scale:0.9}}  className="w-6 ml-3" >
               <PinterestIcon />
-            </a>
+            </motion.a>
         </nav>
         <div className='absolute left-[50%] top-2 translate-x-[-50%] '>
         <Logo />
