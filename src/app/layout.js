@@ -2,6 +2,8 @@ import './globals.css'
 import {Montserrat} from 'next/font/google'
 import Navbar from './components/Navbar'
 import 'tailwindcss/tailwind.css'
+import Footer from './components/Footer'
+import About from './about'
 
 
 const montserrat=Montserrat({
@@ -20,7 +22,11 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${montserrat.variable} font-mont bg-light w-full min-h-screen`}>
       <body>
         <Navbar />
+        
         {children}
+        
+        <Footer />
+        <About />
         </body>
     </html>
   )
