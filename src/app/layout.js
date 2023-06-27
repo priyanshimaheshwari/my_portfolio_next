@@ -3,7 +3,7 @@ import {Montserrat} from 'next/font/google'
 import Navbar from './components/Navbar'
 import 'tailwindcss/tailwind.css'
 import Footer from './components/Footer'
-import About from './about'
+import About from './pages/about'
 
 
 const montserrat=Montserrat({

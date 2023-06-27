@@ -1,13 +1,13 @@
 "use client"
 
 import React,{useEffect,useRef} from 'react'
-import AnimatedText from './components/AnimatedText'
-import Layout from './components/Layout'
-import profilePic from "../../public/images/profile/developer-pic-2.jpg"
+import AnimatedText from '../components/AnimatedText'
+import Layout from '../components/Layout'
+import profilePic from "../../../public/images/profile/developer-pic-2.jpg"
 import Image from 'next/image'
 import { motionValue, useInView, useMotionValue, useSpring } from 'framer-motion'
-import Skills from './components/Skills'
-import Education from './components/Education'
+import Skills from '../components/Skills'
+import Education from '../components/Education'
 
 const AnimatedNumbers=({value})=>{
     const ref=useRef(null);
